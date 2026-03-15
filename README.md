@@ -21,7 +21,6 @@ The lab covers four Jenkins job types, progressing from simple freestyle jobs to
 | **Docker** | Containerization (Nginx web server) |
 | **Jenkins** | CI/CD automation |
 | **GitHub** | Source control |
-| **Docker Hub** | Container image registry |
 
 ---
 
@@ -29,8 +28,6 @@ The lab covers four Jenkins job types, progressing from simple freestyle jobs to
 
 - Docker Desktop installed and running
 - Jenkins installed (with Docker Pipeline and Git plugins)
-- A Docker Hub account
-- Jenkins credentials configured (`dockerhub-creds`) for Docker Hub authentication
 - Git installed
 
 ---
@@ -77,7 +74,7 @@ Then open [http://localhost:8081](http://localhost:8081) in your browser.
 The `Jenkinsfile` defines the following stages:
 
 ```
-Cloning Git → Building Image → Test Image → Publish Image → Deploy Image
+Cloning Git → Building Image → Test Image → Deploy Image
 ```
 
 | Stage | Description |
@@ -85,7 +82,6 @@ Cloning Git → Building Image → Test Image → Publish Image → Deploy Image
 | **Cloning Git** | Clones the repository from GitHub |
 | **Building Image** | Builds a Docker image tagged with the Jenkins build number |
 | **Test Image** | Runs validation tests on the built image |
-| **Publish Image** | Authenticates to Docker Hub and pushes the image |
 | **Deploy Image** | Stops any existing container and deploys the new version on port `8081` |
 
 Each build produces a uniquely tagged image (`vanhayten/tp5:<BUILD_NUMBER>`), enabling easy rollback and version tracking.
@@ -122,8 +118,8 @@ Four jobs were created throughout this lab to demonstrate different Jenkins appr
 |------------|-------------|
 | ![Web App Header](screenshots/header.png) | Modernized header with Ayoub Chaib's identity |
 | ![Web App Full](screenshots/webapp.png) | Full web application running on localhost:8081 |
-| ![Docker Hub](screenshots/docker_hub.png) | Docker Hub repository status |
-| ![Stage View](screenshots/jenkins_stage_view.png) | Jenkins Pipeline Stage View (Job job3tp5) |
+| ![Jenkins Stage View](screenshots/jenkins_stage_view.png) | Jenkins Pipeline Stage View (Job job3tp5) |
+| ![Local Docker Images](screenshots/docker_local.png) | Local Docker images list |
 
 ---
 
