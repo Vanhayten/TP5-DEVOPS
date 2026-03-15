@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome BDCC — Ayoub Chaib</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0a1628, #0d2137, #0a2e2a);
+      color: #f0f0f0;
+      min-height: 100vh;
+    }
+
+    header {
+      background: rgba(255, 255, 255, 0.04);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(0, 229, 190, 0.15);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header .logo {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: 2px;
+      background: linear-gradient(90deg, #00e5be, #00c4ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    nav a {
+      color: #aaa;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-size: 0.95rem;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00e5be;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 6rem 2rem 4rem;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+      background: linear-gradient(90deg, #00e5be, #00c4ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero .subtitle {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #00e5be;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #aaa;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+      line-height: 1.6;
+    }
+
+    .hero .btn {
+      display: inline-block;
+      padding: 0.75rem 2rem;
+      border: 2px solid #00e5be;
+      border-radius: 50px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s;
+    }
+
+    .hero .btn:hover {
+      background: #00e5be;
+      color: #0a1628;
+      box-shadow: 0 0 24px rgba(0, 229, 190, 0.4);
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 2rem 4rem 4rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(0, 229, 190, 0.12);
+      border-radius: 16px;
+      padding: 2rem;
+      transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 30px rgba(0, 229, 190, 0.15);
+      border-color: rgba(0, 229, 190, 0.35);
+    }
+
+    .card .icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.75rem;
+      color: #fff;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #999;
+      line-height: 1.6;
+    }
+
+    .stats {
+      display: flex;
+      justify-content: center;
+      gap: 4rem;
+      padding: 3rem 2rem;
+      flex-wrap: wrap;
+    }
+
+    .stat {
+      text-align: center;
+    }
+
+    .stat .number {
+      font-size: 2.5rem;
+      font-weight: 800;
+      background: linear-gradient(90deg, #00e5be, #00c4ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .stat .label {
+      font-size: 0.9rem;
+      color: #888;
+      margin-top: 0.25rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #555;
+      font-size: 0.85rem;
+      border-top: 1px solid rgba(0, 229, 190, 0.08);
+      margin-top: 2rem;
+    }
+
+    footer a {
+      color: #00e5be;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">BDCC</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Projects</a>
+      <a href="#">Resources</a>
+      <a href="https://github.com/Vanhayten/TP5-DEVOPS" target="_blank">GitHub</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="subtitle">Ayoub Chaib — Master II BDCC</div>
+    <h1>Welcome BDCC - Version 5</h1>
+    <p>Big Data &amp; Cloud Computing — exploring modern distributed systems, containerization, and scalable architectures.</p>
+    <a href="https://github.com/Vanhayten/TP5-DEVOPS" class="btn" target="_blank">View on GitHub</a>
+  </section>
+
+  <div class="stats">
+    <div class="stat">
+      <div class="number">TP5</div>
+      <div class="label">Current Lab</div>
+    </div>
+    <div class="stat">
+      <div class="number">Docker</div>
+      <div class="label">Container Engine</div>
+    </div>
+    <div class="stat">
+      <div class="number">Nginx</div>
+      <div class="label">Web Server</div>
+    </div>
+  </div>
+
+  <section class="cards">
+    <div class="card">
+      <div class="icon">&#x1F433;</div>
+      <h3>Containerization</h3>
+      <p>Package applications into lightweight, portable containers using Docker for consistent deployments across environments.</p>
+    </div>
+    <div class="card">
+      <div class="icon">&#x2601;&#xFE0F;</div>
+      <h3>Cloud Computing</h3>
+      <p>Leverage cloud infrastructure to build scalable, resilient services that handle real-world workloads efficiently.</p>
+    </div>
+    <div class="card">
+      <div class="icon">&#x1F4CA;</div>
+      <h3>Big Data</h3>
+      <p>Process and analyze massive datasets using distributed computing frameworks and modern data pipelines.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2026 Ayoub Chaib &mdash; <a href="https://github.com/Vanhayten/TP5-DEVOPS" target="_blank">Vanhayten/TP5-DEVOPS</a> &mdash; Built with Docker &amp; Nginx
+  </footer>
+
+</body>
+</html>
