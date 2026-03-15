@@ -118,10 +118,12 @@ Four jobs were created throughout this lab to demonstrate different Jenkins appr
 
 | Screenshot | Description |
 |------------|-------------|
-| ![Job Configuration](#) | Jenkins job configuration |
-| ![Stage View](#) | Pipeline Stage View with build history |
+| Screenshot | Description |
+|------------|-------------|
+| ![Web App Header](screenshots/header.png) | Modernized header with Ayoub Chaib's identity |
+| ![Web App Full](screenshots/webapp.png) | Full web application running on localhost:8081 |
 | ![Docker Hub](#) | Published images on Docker Hub |
-| ![Web App](#) | Application running on localhost:8081 |
+| ![Stage View](#) | Pipeline Stage View with build history |
 
 ---
 
